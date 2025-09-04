@@ -16,7 +16,7 @@ const weeklyData = [
 
 export function EarningLevel() {
   return (
-    <Card className="bg-[#21222D] p-4 w-full">
+    <Card className="bg-[#21222D] p-4 w-full card">
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
         <CardTitle className="text-white">Earning Level</CardTitle>
         <Select defaultValue="weekly">

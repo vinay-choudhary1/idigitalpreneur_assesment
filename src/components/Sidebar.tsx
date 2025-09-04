@@ -1,18 +1,19 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { 
-  Home, 
-  TrendingUp, 
-  Layers, 
-  Wrench, 
-  GraduationCap, 
-  Shield, 
-  Link, 
-  Info, 
-  Star, 
-  Gift, 
-  X 
+import {
+  Home,
+  TrendingUp,
+  Layers,
+  Wrench,
+  GraduationCap,
+  Shield,
+  Link,
+  Info,
+  Star,
+  Gift,
+  X,
 } from "lucide-react";
+import Image from "next/image";
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -55,7 +56,13 @@ export function Sidebar({ sidebarOpen, setSidebarOpen }: SidebarProps) {
           <div className="flex h-16 shrink-0 items-center justify-between">
             {/* Logo */}
             <div className="flex items-center gap-2">
-              <span className="text-white font-semibold text-lg">Razorpay</span>
+              {/* <span className="text-white font-semibold text-lg">Razorpay</span> */}
+              <Image
+                src="/razorpay_logo.svg"
+                alt="Razorpay"
+                width={200}
+                height={200}
+              />
             </div>
 
             <Button

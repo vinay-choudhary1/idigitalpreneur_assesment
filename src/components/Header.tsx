@@ -16,7 +16,7 @@ interface HeaderProps {
 
 export function Header({ setSidebarOpen }: HeaderProps) {
   return (
-    <header className="sticky top-0 z-40 flex h-20 shrink-0 items-center gap-x-4  bg-[#171821]/80 backdrop-blur-sm px-4 shadow-sm lg:gap-x-6 lg:px-6">
+    <header className="sticky top-0 z-10 flex h-20 shrink-0 items-center gap-x-4  bg-[#171821]/80 backdrop-blur-sm px-4 shadow-sm lg:gap-x-6 lg:px-6">
       <Button
         variant="ghost"
         size="sm"

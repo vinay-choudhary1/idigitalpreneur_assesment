@@ -24,7 +24,7 @@ const rankings = [
 
 export function UserRank() {
   return (
-    <Card className="bg-[#21222D] p-4 w-full">
+    <Card className="bg-[#21222D] p-4 w-full card">
       <CardHeader>
         <CardTitle className="text-white">Your Rank</CardTitle>
         <p className="text-slate-400 text-sm pt-1">Among other affiliates</p>

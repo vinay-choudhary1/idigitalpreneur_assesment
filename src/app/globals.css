@@ -73,3 +73,28 @@
     -moz-osx-font-smoothing: grayscale;
   }
 }
+
+
+.card {
+  position: relative;
+  border-radius: 16px; /* rounded corners */
+  padding: 16px;
+  background: #111827; /* inner background (dark) */
+  color: white;
+  z-index: 1;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* covers the whole card */
+  padding: 1px; /* thickness of gradient border */
+  border-radius: 16px;
+  background: linear-gradient(180deg, #21222D, #A9DFD8, #A9DFD8);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude; 
+  pointer-events: none;
+}

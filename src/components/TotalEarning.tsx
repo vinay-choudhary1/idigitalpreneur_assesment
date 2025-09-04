@@ -34,7 +34,7 @@ const CustomTooltip = ({ active, payload, label }: { active?: boolean; payload?:
 
 export function TotalEarning() {
   return (
-    <Card className="bg-[#21222D] p-4 w-full">
+    <Card className="bg-[#21222D] p-4 w-full card">
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-4">
         <CardTitle className="text-white">Total Earning</CardTitle>
         <div className="flex items-center gap-2 bg-[#171821] rounded-md p-1 px-2">

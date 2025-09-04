@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 export function CountdownTimer() {
   const [timeLeft, setTimeLeft] = useState({
@@ -44,7 +45,7 @@ export function CountdownTimer() {
   }, []);
 
   return (
-    <div className="flex items-center gap-8">
+    <div className="flex items-center gap-8 relative">
       <div className="flex items-center gap-2 text-white">
         <div className="flex items-center gap-1">
           <span className="text-3xl font-bold">{timeLeft.days}</span>
@@ -70,6 +71,7 @@ export function CountdownTimer() {
       <p className="text-slate-400 text-sm">
         Your <span className="text-[#A9DFD8]">next</span> level is just <span className="text-[#A9DFD8]">one click away...</span> 
       </p>
+      <Image src="/rocket.svg" alt="Next Level" width={50} height={50} className='absolute -right-56 bottom-0 z-10'/>
     </div>
   );
 }

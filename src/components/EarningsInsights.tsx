@@ -44,7 +44,7 @@ const metrics = [
 
 export function EarningsInsights() {
   return (
-    <div className="space-y-4 bg-[#21222D] rounded-lg p-4 w-full">
+    <div className="space-y-4 bg-[#21222D] rounded-lg p-4 w-full card">
       <div>
         <h2 className="text-xl font-semibold text-white">Earnings Insights</h2>
         <p className="text-slate-400 text-sm">Performance Summary</p>
